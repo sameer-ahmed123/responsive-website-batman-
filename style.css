@@ -72,6 +72,7 @@ h1,h2,h3,h4,h5,h6{
     color: var(--helper-color);
     border-radius: 25px;
     transition: all 0.3s ease-in-out;
+    overflow-x:hidden;
 }
 
 .navbarlist .navbarlink:hover,
@@ -121,15 +122,18 @@ h1,h2,h3,h4,h5,h6{
     height: 50%;
     background: var(--bg-color);
     z-index: -1;
+    
 }
 .container{
     max-width: 130rem;
     margin: 0 auto;
     padding: 0 3.2rem;
+    overflow-x:hidden;
 }
 .grid{
     display: grid;
     gap: 9.6rem;
+    overflow-x:hidden;
 
 }
 .grid-two-columns{
@@ -154,6 +158,7 @@ h1,h2,h3,h4,h5,h6{
 /* hero section */
 .section-hero{
     position: relative;
+    overflow-x:hidden;
 
 }
 .section-hero::before{
@@ -166,6 +171,7 @@ h1,h2,h3,h4,h5,h6{
     height: 50%;
     background-color: #e6e6eb;
     z-index: -1;
+    overflow-x:hidden;
 }
 
 .primary-heading{
@@ -175,6 +181,7 @@ h1,h2,h3,h4,h5,h6{
 .section-hero .para{
     margin: 2rem;
     margin-bottom: 3.2rem;
+    overflow-x:hidden;
 }
 .hero-icon{
     margin-top: 4rem;
@@ -205,6 +212,7 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1.6rem;
     font-size: 1.4rem;
     margin: 0;
+    overflow-x:hidden;
 }
 
 .hero-image{
@@ -212,6 +220,7 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
     align-items: flex-start;
     position: relative;
+    overflow-x:hidden;
 }
 
 .hero-image img{
@@ -224,6 +233,7 @@ h1,h2,h3,h4,h5,h6{
     left: -10%;
     padding: 4rem;
     background-color: var(--primary-color);
+    overflow-x:hidden;
 }
 .hero-image-overlay .para{
     color: var(--white);
@@ -330,6 +340,19 @@ h1,h2,h3,h4,h5,h6{
     }
     .hero-image .hero-img-overlay {
       width: 90%;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .container {
+      max-width: 320px;
+    }
+    .hero-image img {
+      width: 40%;
+    }
+    .hero-image .hero-img-overlay {
+      width: 50%;
       left: 0;
     }
   }
