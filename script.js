@@ -9,12 +9,3 @@ const toggleNavbar = () => {
 //  subscribe to thapa technical Channle plz link:https://www.youtube.com/thapatechnical
 mobile_nav.addEventListener("click", () => toggleNavbar());
 
-// function online(){
-//   var connectivity = window.navigator.onLine
-//   if (connectivity){
-//     alert("you are online")
-//   }
-//   else{
-//     alert("you are offline")
-//   }
-// }
